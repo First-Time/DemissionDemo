@@ -1,11 +1,14 @@
 package com.lyf.dimension
 
+import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,6 +38,15 @@ class MainActivity : AppCompatActivity() {
         println("10mm == ${Integer.toBinaryString(typedValue.data)}")
         println(resources.getDimension(R.dimen.tmm))
 
+        println(resources.getFraction(R.fraction.base, 2, 1))
+        println(resources.getFraction(R.fraction.pbase, 2, 1))
+
+        println(resources.getFraction(R.fraction.base, 1, 2))
+        println(resources.getFraction(R.fraction.pbase, 1, 2))
+
+        println()
+
+        println("bool = ${resources.getBoolean(R.bool.gender)}")
 
     }
 }

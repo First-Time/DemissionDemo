@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="tdp">10dp</dimen>
+    <dimen name="tdp">100dp</dimen>
     <dimen name="tsp">10sp</dimen>
-    <dimen name="tpt">10pt</dimen>
-    <dimen name="tpx">10px</dimen>
-    <dimen name="tmm">10mm</dimen>
-    <dimen name="tin">10in</dimen>
+    <dimen name="tpt">100pt</dimen>
+    <dimen name="tpx">100px</dimen>
+    <dimen name="tmm">100mm</dimen>
+    <dimen name="tin">100in</dimen>
+    <bool name="gender">false</bool>
 </resources>
